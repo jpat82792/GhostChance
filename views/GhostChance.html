@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>ǒurán</title>
+<link href="/stylesheets/main.css" rel="stylesheet" type="text/css"/> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>    
+<link rel="icon" href="/images/cursor.png">
+</head>
+<div id="loader-wrapper" class="visible">
+    <canvas id="loader" class="visible" width=800 height=800 ></canvas>
+	<div id="line1"></div>
+	<div id="line2"></div>
+	<img id="char18" class="hidden" src="/images/char18.png" height="34" width="35">
+	<img id="char17" class="hidden" src="/images/char17.png" height="35" width="34">
+	<img id="char16" class="hidden" src="/images/char16.png" height="34" width="33">
+	<img id="char15" class="hidden" src="/images/char15.png" height="37" width="37">
+	<img id="char14" class="hidden" src="/images/char14.png" height="37" width="36">
+	<img id="char13" class="hidden" src="/images/char13.png" height="35" width="35">
+	<img id="char12" class="hidden" src="/images/char12.png" height="37" width="37">
+	<img id="char11" class="hidden" src="/images/char11.png" height="36" width="36">
+	<img id="char10" class="hidden" src="/images/char10.png" height="37" width="35">
+	<img id="char9" class="hidden" src="/images/char9.png" height="35" width="34">
+	<img id="char8" class="hidden" src="/images/char8.png" height="36" width="30">
+	<img id="char7" class="hidden" src="/images/char7.png" height="4" width="36">
+	<img id="char6" class="hidden" src="/images/char6.png" height="35" width="34">
+	<img id="char5" class="hidden" src="/images/test.png" height="35" width="37">
+	<img id="char4" class="hidden" src="/images/char4.png" height="39" width="36">
+	<img id="char3" class="hidden" src="/images/char3.png" height="38" width="38">
+	<img id="char2" class="hidden" src="/images/char2.png" height="36" width="36">
+    <img id="char1" class="hidden" src="/images/char1.png" height="34" width="35">  
+	<img id="1line" class="hidden" src="/images/1line.png" height="22" width="79">
+	<img id="2line" class="hidden" src="/images/2line.png" height="22" width="79">
+	<img id="titlechar1" class="hidden" src="/images/firstTitle.png" height="21" width="23">
+	<img id="titlechar2" class="hidden" src="/images/secondTitle.png" height="22" width="24">
+	<img id="author" class="hidden" src="/images/author.png" height="22" width="81">
+</div> 
+
+<script type="text/javascript" src="/javascripts/loading.js"></script>
+<body>    
+<div id="page" class="hidden">
+
+	<div id="first-line">
+	<img id="first-line-cursor" onclick="revealChineseCharactersText(8, first_interval, second_interval, 'first-line-cursor', 'second-line-cursor')" class="visible" src="/images/cursor.png" height="50" width="40">
+	<img id="1char0" class="hidden" src="/images/char1.png" height="34" width="35"> 
+	<img id="1char1" class="hidden" src="/images/char2.png" height="36" width="36">
+	<img id="1char2" class="hidden" src="/images/char3.png" height="38" width="38">
+	<img id="1char3" class="hidden" src="/images/char4.png" height="39" width="36">
+	<img id="1char4" class="hidden" src="/images/char5.png" height="34" width="75">
+	<img id="1char5" class="hidden" src="/images/char6.png" height="36" width="36">
+	<img id="1char6" class="hidden" src="/images/char7.png" height="36" width="30">
+	<img id="1char7" class="hidden" src="/images/char8.png" height="35" width="34">
+	</div>
+	<br style="clear:both">
+
+	<div id="second-line">
+	<img id="second-line-cursor" onclick="revealChineseCharactersText(17, second_interval, third_interval, 'second-line-cursor', 'third-line-cursor')" class="hidden" src="/images/cursor.png" height="50" width="40">
+	<img id="1char8" class="hidden" src="/images/char9.png" height="37" width="35">
+	<img id="1char9" class="hidden" src="/images/char10.png" height="36" width="36">
+	<img id="1char10" class="hidden" src="/images/char11.png" height="37" width="37">
+	<img id="1char11" class="hidden" src="/images/char12.png" height="35" width="35">
+	<img id="1char12" class="hidden" src="/images/char13.png" height="37" width="36">
+	<img id="1char13" class="hidden" src="/images/char14.png" height="37" width="37">
+	<img id="1char14" class="hidden" src="/images/char15.png" height="34" width="33">
+	<img id="1char15" class="hidden" src="/images/char16.png" height="35" width="34">
+	<img id="1char16" class="hidden" src="/images/char17.png" height="34" width="35">
+	</div>
+	
+	<br style="clear:both">
+	<div id="third-line">
+	<img id="third-line-cursor" onclick="revealChineseCharactersText(22, third_interval, fourth_interval, 'third-line-cursor' )" class="hidden" src="/images/cursor.png" height="50" width="40">
+	<img id="1char17" class="hidden" src="/images/char18.png" height="37" width="35">
+	<img id="1char18" class="hidden" src="/images/char19.png" height="34" width="36">
+	<img id="1char19" class="hidden" src="/images/char20.png" height="36" width="35">
+	<img id="1char20" class="hidden" src="/images/char21.png" height="35" width="35">
+	<img id="1char21" class="hidden" src="/images/char22.png" height="36" width="35">
+	</div>
+	
+	<br style="clear:both">
+	<div id="fourth-line">	
+	<img id="fourth-line-cursor" onclick="revealChineseCharactersText(27, fourth_interval, fifth_interval, 'fourth-line-cursor' )" class="hidden" src="/images/cursor.png" height="50" width="40">
+	<img id="1char22" class="hidden" src="/images/char23.png" height="36" width="36">
+	<img id="1char23" class="hidden" src="/images/char24.png" height="34" width="35">
+	<img id="1char24" class="hidden" src="/images/char25.png" height="36" width="35">
+	<img id="1char25" class="hidden" src="/images/char26.png" height="36" width="35">
+	<img id="1char26" class="hidden" src="/images/char27.png" height="35" width="36">
+	</div>
+	
+	<br style="clear:both">
+	<div id="fifth-line">
+	<img id="fifth-line-cursor" onclick="revealChineseCharactersText(36, fifth_interval, 0, 'fifth-line-cursor' )" class="hidden" src="/images/cursor.png" height="50" width="40">
+	<img id="1char27" class="hidden" src="/images/char28.png" height="35" width="36">
+	<img id="1char28" class="hidden" src="/images/char29.png" height="34" width="36">
+	<img id="1char29" class="hidden" src="/images/char30.png" height="36" width="35">
+	<img id="1char30" class="hidden" src="/images/char31.png" height="37" width="35">
+	<img id="1char31" class="hidden" src="/images/char32.png" height="37" width="36">
+	<img id="1char32" class="hidden" src="/images/char33.png" height="37" width="37">
+	<img id="1char33" class="hidden" src="/images/char34.png" height="35" width="32">
+	<img id="1char34" class="hidden" src="/images/char35.png" height="35" width="32">
+	<img id="1char35" class="hidden" src="/images/char36.png" height="35" width="32">
+	</div>
+</div>
+<div id="errorScreen" class="hidden">
+<h1>Warning: possible stack overflow beginning at 0x06546873.
+<br style="clear:both">
+ Clearing stack and reinitializing program.
+<br style="clear:both">
+ Please wait. 
+</h1>
+</div>
+<div id="attribution" class="hidden">
+<h2>
+From the poem in Chinese of Xu Zhimo
+<br style="clear:both">
+Translation by The Radiant Ghosts
+</h2>
+</div>
+<canvas id="primarycanvas" width="1000" height="700"></canvas>
+<div id="author_credit">
+</div>
+<script type="text/javascript" src="/javascripts/onhover.js"></script>
+
+
+</body>
+</html>
